@@ -1,0 +1,30 @@
+{
+	"general":{
+		"package":"telegraf",
+		"name":"Telegraf",
+		"version":"1.21.1",
+		"depends":[
+			"docker-ce(>=19.03.8.r5)",
+			"influxdb(>=2.1.1)"
+		],
+		"developer":"Influxdata",
+		"maintainer":"Donavan",
+		"email":"snark@hey.com",
+		"website":"https://www.influxdata.com/get-influxdb/",
+		"architecture":"x86-64",
+		"firmware":"3.5.0"
+	},
+	"register":{
+		"share-folder":[
+			{
+				"name":"Docker",
+				"description":"Data and files directory for Docker Apps"
+            }
+		],
+		"boot-priority":{
+			"start-order":70,
+			"stop-order":30
+		},
+		"port":[8125, 8092, 8094]
+	}
+}

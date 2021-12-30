@@ -1,0 +1,6 @@
+InfluxDB is an open-source time series database (TSDB) developed by InfluxData. It is optimized for fast, high-availability storage and retrieval of time series data in fields such as operations monitoring, application metrics, IoT sensor data, and real-time analytics.
+
+Note:
+1. The configuration file is located in the InfluxDB/config folder under the Docker share.
+2. Data is stored in the InfluxDB/data folder under the Docker share.
+

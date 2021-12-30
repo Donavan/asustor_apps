@@ -1,0 +1,41 @@
+{
+	"general":{
+		"package":"influxdb",
+		"name":"InfluxDB",
+		"version":"2.1.1",
+		"depends":[
+			"docker-ce(>=19.03.8.r5)"
+		],
+		"developer":"Influxdata",
+		"maintainer":"Donavan",
+		"email":"snark@hey.com",
+		"website":"https://www.influxdata.com/get-influxdb/",
+		"architecture":"x86-64",
+		"firmware":"3.5.0"
+	},
+	"adm-desktop": {
+		"app": {
+			"port": 8086,
+			"protocol": "http",
+			"type": "custom",
+			"url": "/" 
+		},
+		"privilege": {
+			"accessible": "administrators", 
+			"customizable": true 
+		} 
+	},
+	"register":{
+		"share-folder":[
+			{
+				"name":"Docker",
+				"description":"Data and files directory for Docker Apps"
+            }
+		],
+		"boot-priority":{
+			"start-order":70,
+			"stop-order":30
+		},
+		"port":[8086]
+	}
+}
